@@ -1,4 +1,4 @@
-
+# @name create-user
 POST http://localhost:8080/users/
 Content-Type: application/json
 
@@ -6,4 +6,19 @@ Content-Type: application/json
   "name": "Vinicius Reis",
   "username": "viniciusreis",
   "password": "123456"
+}
+
+###
+
+# @name create-task
+POST http://localhost:8080/tasks/
+Content-Type: application/json
+
+{
+  "description": "Tarefa para gravar aula de Tasks do Curso Spring Boot",
+  "title": "Gravação de aula",
+  "priority": "ALTA",
+  "startAt": "2023-10-06T15:30:00",
+  "endAt": "2023-10-07T18:30:00",
+  "idUser": "65765af8-76e8-475d-ae7b-91290ed132af"
 }
