@@ -22,3 +22,7 @@ Content-Type: application/json
   "endAt": "2023-10-07T18:30:00",
   "idUser": "65765af8-76e8-475d-ae7b-91290ed132af"
 }
+
+# @name make-auth
+POST http://localhost:8080/tasks/ HTTP/1.1
+Authorization: Basic viniciusreis 123456
