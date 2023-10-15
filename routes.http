@@ -13,6 +13,7 @@ Content-Type: application/json
 # @name create-task
 POST http://localhost:8080/tasks/
 Content-Type: application/json
+Authorization: Basic viniciusreis 123456
 
 {
   "description": "Tarefa para gravar aula de Tasks do Curso Spring Boot",
@@ -23,6 +24,3 @@ Content-Type: application/json
   "idUser": "65765af8-76e8-475d-ae7b-91290ed132af"
 }
 
-# @name make-auth
-POST http://localhost:8080/tasks/ HTTP/1.1
-Authorization: Basic viniciusreis 123456
